@@ -1,0 +1,27 @@
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Variables de entorno y contraseñas
+.env
+.env.local
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Bases de datos locales
+*.db
+*.sqlite3
+
+# Herramientas y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs y testing
+*.log
+.pytest_cache/
