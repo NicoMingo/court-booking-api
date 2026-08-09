@@ -34,14 +34,15 @@ REST API para gestión de reservas de canchas deportivas, construida con FastAPI
 - `GET /bookings` — Listar todas las reservas
 - `GET /bookings/{id}` — Obtener reserva por ID
 
-## Instalación
+## 🚀 Instalación
 
 1. Clonar el repositorio
 2. Crear entorno virtual: `python -m venv venv`
-3. Activar entorno virtual: `venv\Scripts\activate` (Windows)
+3. Activar entorno virtual: `source venv/bin/activate` *(Windows: `venv\Scripts\activate`)*
 4. Instalar dependencias: `pip install -r requirements.txt`
-5. Crear archivo `.env` con tu `DATABASE_URL`
-6. Ejecutar: `uvicorn main:app --reload`
+5. Crear archivo `.env` con tu `DATABASE_URL` y `SECRET_KEY`
+6. Configurar base de datos: `alembic upgrade head`
+7. Ejecutar servidor: `uvicorn main:app --reload`
 
 ## Variables de entorno
 
